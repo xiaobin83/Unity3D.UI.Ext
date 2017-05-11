@@ -8,7 +8,8 @@ public class Test : MonoBehaviour {
 	void Awake()
 	{
 		var n = treeView.Add("test01", new TestItem() { text = "Test 01" });
-		treeView.Add("test02", new TestItem() { text = "Test 02" }, n);
+		var n02 = treeView.Add("test02", new TestItem() { text = "Test 02" }, n);
+		treeView.Add("test02_sub", new TestItem() { text = "Test 02 Sub" }, n02);
 		treeView.Add("test03", new TestItem() { text = "Test 03" }, n);
 		var n04 = treeView.Add("test04", new TestItem() { text = "Test 04" }, n);
 		treeView.Add("test05", new TestItem() { text = "Test 05" }, n04);
