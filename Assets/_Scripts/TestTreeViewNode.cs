@@ -16,7 +16,7 @@ public class TestTreeViewNode : MonoBehaviour
 		layout = GetComponent<HorizontalLayoutGroup>();
 	}
 
-	void OnNodeCreated(ui.TreeView<TestItem>.Node node)
+	void OnItemCreated(ui.TreeView<TestItem>.Node node)
 	{
 		item = node.item;
 		text.text = item.text;
@@ -24,12 +24,12 @@ public class TestTreeViewNode : MonoBehaviour
 		layout.padding.left = node.indent;
 	}
 
-	void OnNodeSelected()
+	void OnItemSelected()
 	{
 		highlight.enabled = true;
 	}
 
-	void OnNodeDeselected()
+	void OnItemDeselected()
 	{
 		highlight.enabled = false;
 	}

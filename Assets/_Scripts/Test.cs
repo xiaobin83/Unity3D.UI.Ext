@@ -17,4 +17,9 @@ public class Test : MonoBehaviour {
 	}
 
 
+	void RemoveSelected()
+	{
+		treeView.RemoveSelected();
+	}
+
 }
