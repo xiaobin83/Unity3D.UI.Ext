@@ -109,7 +109,7 @@ namespace ui
 
 		public Node selected { get; private set; }
 				
-		public Node Add(string name, T item, Node parent = null)
+		public virtual Node Add(string name, T item, Node parent = null)
 		{
 			if (parent == null) parent = root;
 			if (parent.children == null)
@@ -156,7 +156,7 @@ namespace ui
 			}
 		}
 
-		public void Remove(Node target)
+		public virtual void Remove(Node target)
 		{
 			if (temp.Count > 0) return;
 

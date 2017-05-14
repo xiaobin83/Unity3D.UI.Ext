@@ -19,7 +19,6 @@ namespace ui
 		}
 
 		List<T> freeList_ = new List<T>();
-		List<T> inUseList_ = new List<T>();
 
 		public T Alloc()
 		{
